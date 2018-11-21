@@ -1,0 +1,38 @@
+﻿<UserControl
+    x:Class="CaliburnApp3.Views.UserCtrlView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CaliburnApp3.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:cm="using:Caliburn.Micro"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Background="Aqua" Margin="10">
+        <TextBlock Text="Radio Butons:" />
+        <!--<Grid x:Name="RadioButton1IsVisible">
+            <RadioButton GroupName="ItemGroup" x:Name="SearchFor1" Content="Radio1" />
+        </Grid>
+        <Grid x:Name="RadioButton2IsVisible">
+            <RadioButton GroupName="ItemGroup" x:Name="SearchFor2" Content="Radio2" />
+        </Grid>
+        <Grid x:Name="RadioButton3IsVisible">
+            <RadioButton GroupName="ItemGroup" x:Name="SearchFor3" Content="Radio3" />
+        </Grid>
+        <Grid x:Name="RadioButton4IsVisible">
+            <RadioButton GroupName="ItemGroup" x:Name="SearchFor4" Content="Radio4" />
+        </Grid>-->
+        <Grid x:Name="RadioButton1IsVisible">
+            <RadioButton x:Name="SearchFor1" Content="Radio1" />
+        </Grid>
+        <Grid x:Name="RadioButton2IsVisible">
+            <RadioButton x:Name="SearchFor2" Content="Radio2" />
+        </Grid>
+        <Grid x:Name="RadioButton3IsVisible">
+            <RadioButton x:Name="SearchFor3" Content="Radio3" />
+        </Grid>
+        <Grid x:Name="RadioButton4IsVisible">
+            <RadioButton x:Name="SearchFor4" Content="Radio4" />
+        </Grid>
+    </StackPanel>
+</UserControl>

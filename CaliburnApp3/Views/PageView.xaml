@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="CaliburnApp3.Views.PageView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CaliburnApp3.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:cm="using:Caliburn.Micro"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toastinet="using:Toastinet"
+    mc:Ignorable="d">
+
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="PageView:" />
+            <StackPanel Background="LightGreen" Margin="10">
+                <TextBlock Text="Main1:" />
+                <TextBlock x:Name="ToastMessage" />
+                <Button x:Name="SetRadio11" Content="SetRadio1 of 1" />
+                <Button x:Name="SetRadio12" Content="SetRadio2 of 1" />
+                <Button x:Name="SetRadio13" Content="SetRadio3 of 1" />
+                <Button x:Name="SetRadio14" Content="SetRadio4 of 1" />
+                <Button x:Name="ToPage2" Content="To Page2" />
+                <ContentControl x:Name="UserCtrlView1" />
+            </StackPanel>
+            <StackPanel Background="LightCyan" Margin="10">
+                <TextBlock Text="Main2:" />
+                <Button x:Name="SetRadio21" Content="SetRadio1 of 2" />
+                <Button x:Name="SetRadio22" Content="SetRadio2 of 2" />
+                <Button x:Name="SetRadio23" Content="SetRadio3 of 2" />
+                <Button x:Name="SetRadio24" Content="SetRadio4 of 2" />
+                <ContentControl x:Name="UserCtrlView2" />
+            </StackPanel>
+        </StackPanel>
+        <!-- Toast表示用 -->
+        <toastinet:Toastinet x:Name="ToastMessageBox" Message="{Binding ToastMessage, Mode=TwoWay}" />
+    </Grid>
+</Page>
